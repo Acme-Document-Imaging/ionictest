@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {BarcodeScanner} from '@ionic-native/barcode-scanner';
+import { Serial } from '@ionic-native/serial';
 
 @Component({
   selector: 'page-home',
@@ -8,11 +9,31 @@ import {BarcodeScanner} from '@ionic-native/barcode-scanner';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController,private barcodescanner:BarcodeScanner) {
+  constructor(public navCtrl: NavController,private barcodescanner:BarcodeScanner,private serial:Serial) {
 
   }
   rawData:string;
-
+doSerial()
+{
+alert("Serial");
+this.serial.requestPermission().then(() => {
+  this.serial.open({
+    baudRate: 9800,
+    dataBits: 4,
+    stopBits: 1,
+    parity: 0,
+    dtr: true,
+    rts: true,
+    sleepOnPause: false
+  }).then(() => {
+    //console.log('Serial connection opened');
+    alert("Connectin open");
+  });
+}).catch((error: any) => 
+//console.log(error) 
+alert('Serial Error '+error)
+);
+};
   doScan()
   {
     this.rawData='';

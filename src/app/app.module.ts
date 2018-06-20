@@ -11,7 +11,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
-
+import { Serial } from '@ionic-native/serial';
 @NgModule({
   declarations: [
     MyApp,
@@ -36,6 +36,7 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
     StatusBar,
     SplashScreen,
     BarcodeScanner,
+    Serial,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
