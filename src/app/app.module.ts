@@ -12,6 +12,11 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { Serial } from '@ionic-native/serial';
+//https://github.com/neo9/cordova-honeywell-scanner
+//https://github.com/domisginger/ionic-cordova-barcode-examples/tree/master/src
+//import{honeywell} from '@neo9/cordova-honeywell-scanner';
+
+
 @NgModule({
   declarations: [
     MyApp,

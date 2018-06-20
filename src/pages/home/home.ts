@@ -31,7 +31,7 @@ this.serial.requestPermission().then(() => {
   });
 }).catch((error: any) => 
 //console.log(error) 
-alert('Serial Error '+error)
+alert('Serial Error: '+error)
 );
 };
   doScan()
@@ -41,6 +41,8 @@ alert('Serial Error '+error)
       {
         //torchOn:true,
        showTorchButton:true, 
+       //preferFrontCamera:true,
+       showFlipCameraButton:true,
         formats:'PDF_417,QR_CODE'
         //'QR_CODE,DATA_MATRIX,UPC_E,UPC_A,EAN_8,EAN_13,CODE_128,CODE_39,CODE_93,CODABAR,ITF,RSS14,RSS_EXPANDED, PDF_417'
       } ).then(barcodeData => {
