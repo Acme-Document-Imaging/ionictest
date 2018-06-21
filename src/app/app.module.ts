@@ -7,11 +7,12 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
-
+import { HttpModule } from '@angular/http';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { Serial } from '@ionic-native/serial';
+import{ManateeScanner} from '../providers/mantee-scanner';
 //https://github.com/neo9/cordova-honeywell-scanner
 //https://github.com/domisginger/ionic-cordova-barcode-examples/tree/master/src
 //import{honeywell} from '@neo9/cordova-honeywell-scanner';
@@ -27,6 +28,7 @@ import { Serial } from '@ionic-native/serial';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -42,6 +44,7 @@ import { Serial } from '@ionic-native/serial';
     SplashScreen,
     BarcodeScanner,
     Serial,
+    ManateeScanner,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

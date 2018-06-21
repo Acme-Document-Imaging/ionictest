@@ -84,4 +84,7 @@
     <plugin name="phonegap-plugin-barcodescanner" spec="^8.0.0" />
     <plugin name="fr.drangies.cordova.serial" spec="~0.0.7" />
     <plugin name="com.neo9.cordova-honeywell-scanner" spec="@neo9/cordova-honeywell-scanner@~1.0.3" />
+    <plugin name="cmb-sdk-cordova-plugin" spec="C:\Users\ameen\Downloads\cmbSDK_Cordova_v2.0.2.1207\cmb-cordova">
+        <variable name="MW_LICENSE_KEY" value="gTfjK3J+lVKKVNdt5YS/1NaFXE2QPXcHJ1Fmh4Whk9c=" />
+    </plugin>
 </widget>

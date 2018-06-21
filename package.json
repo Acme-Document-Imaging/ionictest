@@ -29,8 +29,10 @@
     "@ionic/pro": "1.0.20",
     "@ionic/storage": "2.1.3",
     "@neo9/cordova-honeywell-scanner": "^1.0.3",
+    "cmb-sdk-cordova-plugin": "file:C:/Users/ameen/Downloads/cmbSDK_Cordova_v2.0.2.1207/cmb-cordova",
     "cordovarduino": "0.0.8",
     "ionic-angular": "3.9.2",
+    "ionic-native": "^2.9.0",
     "ionicons": "3.0.0",
     "phonegap-plugin-barcodescanner": "^8.0.0",
     "rxjs": "5.5.11",
@@ -46,7 +48,10 @@
     "plugins": {
       "phonegap-plugin-barcodescanner": {},
       "fr.drangies.cordova.serial": {},
-      "com.neo9.cordova-honeywell-scanner": {}
+      "com.neo9.cordova-honeywell-scanner": {},
+      "cmb-sdk-cordova-plugin": {
+        "MW_LICENSE_KEY": "gTfjK3J+lVKKVNdt5YS/1NaFXE2QPXcHJ1Fmh4Whk9c="
+      }
     }
   }
 }
